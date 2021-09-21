@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Евгений Брагин](https://up.htmlacademy.ru/htmlcss/32/user/1772487).
-* Наставник: `Руслан Бреев`.
+* Наставник: [Руслан Бреев](https://htmlacademy.ru/profile/blckwltz).
 
 ---
 
