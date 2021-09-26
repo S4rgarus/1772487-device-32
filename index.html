@@ -67,7 +67,7 @@
 
             <section class="main-slider"> <!--Не понятно со слайдером-->
                 <h2 class="visually-hidden">Лучшее предложение</h2>
-                    <img class="slider-image" src="" alt="Примеры работ" >
+                    <img class="slider-image" src="" alt="фото лучших предложений">
                     <button class="slider-button slider-prev" type="button">
                       <span class="visually-hidden">Предыдущее фото</span>
                     </button>
@@ -126,14 +126,14 @@
             </section>
             <section class="main-servise">
                 <h2 class="visually-hidden">Наш сервис</h2>
-                <ul>
-                    <li>
+                <ul class="main-service-list">
+                    <li class="main-service-item">
                       <a class="main-button" href="#section1">Доставка</a>
                     </li>
-                    <li>
+                    <li class="main-service-item">
                       <a class="main-button" href="#section2">Гарантия</a>
                     </li>
-                    <li>
+                    <li class="main-service-item">
                         <a class="main-button" href="#section3">Кредит</a>
                     </li>
                 </ul>
@@ -153,14 +153,24 @@
                   </section>
             </section>
 
+            <section class="delivery">
+              <h2 class="visually-hidden">Доставка</h2>
+              <a href="#">Доставим редкий товар под заказ</a>
+              <div>
+                <button class="dilivery-info-button" type="button">
+                <span class="visually-hidden">Кнопка информации</span>>
+              </div>
+
+            </section>
+
             <section class="about">
                 <h2>О нас</h2>
                 <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
                 <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-                    <ul>
-                        <li>Меловые линии</li>
-                        <li>Сдик</li>
-                        <li>ТоксБери</li>
+                    <ul class="about-list">
+                        <li class="about-item">Меловые линии</li>
+                        <li class="about-item">Сдик</li>
+                        <li class="about-item">ТоксБери</li>
                         </ul>
                 <a class="main-button" href="#">Подробнее о нас</a>
             </section>
@@ -203,23 +213,33 @@
 
 
         </main>
-        <footer>                                                                <!--Секции?-->
+        <footer>
+
             <img class="logo" src="" alt="логотип интернет магазина Девайс">
+            <section class="footer-contact">
             <p class="contact-text_footer">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            <ul class="footer-list">
-                <li class="footer-item">
-                  <a class="footer-link" href="#">Доставка</a>
+            </section>
+            <section class="footer-service">
+              <h2 class="visually-hidden">Сервис</h2>
+            <ul class="footer-service-list">
+                <li class="footer-service-item">
+                  <a class="footer-service-link" href="#">Доставка</a>
                 </li>
-                <li class="footer-item">
-                  <a class="footer-link" href="#">Гарантия</a>
+                <li class="footer-service-item">
+                  <a class="footer-service-link" href="#">Гарантия</a>
                 </li>
-                <li class="footer-item">
-                    <a class="footer-link" href="#">Кредит</a>
+                <li class="footer-service-item">
+                    <a class="footer-service-link" href="#">Кредит</a>
                 </li>
             </ul>
-            <a class="contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a> <!--должна ли быть группировка адреса в подвале?-->
+            </section>
 
-            <section class="footer-social"> <!--Скрытые заголовки в соответствиии с содержимым?-->
+            <section class="footer-contact">
+            <a class="footer-contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </section>
+
+            <section class="footer-social">
+              <h2 class="visually-hidden">Социальные сети</h2>
                 <ul class="footer-social-list">
                   <li class="footer-social-item">
                     <a class="button" href="#">
