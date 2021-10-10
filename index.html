@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title> Интернет магазин "Девайс"</title>
+        <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
         <header class="main-header">
-            <img class="logo" src="" alt="логотип интернет магазина Девайс">
+            <img class="logo" src="images/device.svg" alt="логотип интернет магазина Девайс">
 
             <form>
                 <p><input type="text" name="search" placeholder="Поиск по сайту">
@@ -28,25 +29,25 @@
 
 
                 <ul class="navigation-list navigation-catalog">
-                    <li><a class="navigation-item" href="#">Каталог товаров</a> </li>
+                    <li><a class="navigation-link" href="#">Каталог товаров</a> </li>
                         <ul>
                             <li class="navigation-item">
-                            <a class="navigation-link" href="#">Виртуальная реальность</a>
+                            <a class="navigation-link-menu" href="#">Виртуальная реальность</a>
                             </li>
                              <li class="navigation-item">
-                            <a class="navigation-link" href="#">Моноподы для селфи</a>
+                            <a class="navigation-link-menu" href="#">Моноподы для селфи</a>
                             </li>
                             <li class="navigation-item">
-                            <a class="navigation-link" href="#">Экшн-камеры</a>
+                            <a class="navigation-link-menu" href="#">Экшн-камеры</a>
                             </li>
                             <li class="navigation-item">
-                            <a class="navigation-link" href="#">Фитнес-браслеты</a>
+                            <a class="navigation-link-menu" href="#">Фитнес-браслеты</a>
                             </li>
                             <li class="navigation-item">
-                            <a class="navigation-link" href="#">Умные часы</a>
+                            <a class="navigation-link-menu" href="#">Умные часы</a>
                             </li>
                             <li class="navigation-item">
-                            <a class="navigation-link" href="#">Квадрокоптеры</a>
+                            <a class="navigation-link-menu" href="#">Квадрокоптеры</a>
                         </ul>
                     </li>
                     <li class="navigation-item">
@@ -68,9 +69,9 @@
             <section class="main-slider"> <!--Не понятно со слайдером-->
                 <h2 class="visually-hidden">Лучшее предложение</h2>
                 <div>
-                    <img class="slider-image" src="" alt="фото лучших предложений">
-                    <p>Порхает как бабочка, жалит как пчела!</p>
-                    <span>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</span>
+                    <img class="slider-image" src="images/slider/slider-1.jpg" width="560" height="560" alt="фото лучших предложений">
+                    <p class="slider-header">Порхает как бабочка, жалит как пчела!</p>
+                    <span class="slider-disc">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</span>
                     <table class="slider-table">
                       <tr>
                         <td>800 м</td>
@@ -113,28 +114,28 @@
                 <h2 class="visually-hidden">Категории товаров</h2>
                 <ul>
                     <li><a class="category-item" href="#">
-                <img src="" alt="Очки виртуальной реальности">
-                <p>Виртуальная реальность</p></a>
+                <img src="images/category-1.svg" alt="Очки виртуальной реальности">
+                <p class="visually-hidden">Виртуальная реальность</p></a>
                     </li>
                     <li><a class="category-item" href="#">
-                <img src="" alt="Моноподы для селфи">
-                <p>Моноподы для селфи</p></a>
+                <img src="images/category-2.svg" alt="Моноподы для селфи">
+                <p class="visually-hidden">Моноподы для селфи</p></a>
                     </li>
                     <li><a class="category-item" href="#">
-                <img src="" alt="Экшн-камеры">
-                <p>Экшн-камеры</p></a>
+                <img src="images/category-3.svg" alt="Экшн-камеры">
+                <p class="visually-hidden">Экшн-камеры</p></a>
                     </li>
                     <li><a class="category-item" href="#">
-                <img src="" alt="Фитнес-браслеты">
-                <p>Фитнес-браслеты</p></a>
+                <img src="images/category-4.svg" alt="Фитнес-браслеты">
+                <p class="visually-hidden">Фитнес-браслеты</p></a>
                     </li>
                     <li><a class="category-item" href="#">
-                <img src="" alt="Умные часы">
-                <p>Умные часы</p></a>
+                <img src="images/category-5.svg" alt="Умные часы">
+                <p class="visually-hidden">Умные часы</p></a>
                     </li>
                     <li><a class="category-item" href="#">
-                <img src="" alt="Квадрокоптеры">
-                <p>Квадрокоптеры</p></a>
+                <img src="images/category-6.svg" alt="Квадрокоптеры">
+                <p class="visually-hidden">Квадрокоптеры</p></a>
                     </li>
                 </ul>
             </section>
@@ -156,14 +157,21 @@
                     <p>Мы с удовольствием доставим ваш товар прямо
                         к вашему подъезду совершенно бесплатно! Ведь
                         мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                    <img class="service-disc" src="images/delivery-2.svg" alt="курьер с посылкой">
                   </section>
                   <section id="section2">
                     <h2>Гарантия</h2>
-                    <p>Гарантия</p>
+                    <p>Если из-за возгорания купленного у нас товара у вас
+                      сгорит дом — не переживайте, мы выдадим вам новый.
+                      Товар, не дом, конечно же.</p>
+                    <img class="service-disc" src="images/warranty-1.svg" alt="консультация по гарантии">
                   </section>
                   <section id="section3">
                     <h2>Кредит</h2>
-                    <p>Кредит</p>
+                    <p>Залезть в долговую яму стало проще!
+                      Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
+                      Выгодные для банка, разумеется.</p>
+                    <img class="service-disc" src="images/credit-1.svg" alt="человек с кредитной картой">
                   </section>
             </section>
 
@@ -229,7 +237,7 @@
         </main>
         <footer>
 
-            <img class="logo" src="" alt="логотип интернет магазина Девайс">
+            <img class="logo" src="images/logo-footer.svg" alt="логотип интернет магазина Девайс">
 
             <p class="contact-text_footer">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
 
