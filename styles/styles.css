@@ -104,7 +104,7 @@ body {
   line-height: 30px;
 }
 
-th {
+.slider-table th {
   font-family: Rubik;
   color: #000000;
   font-style: normal;
@@ -113,7 +113,7 @@ th {
   line-height: 30px;
 }
 
-td {
+.slider-table td {
   font-family: Rubik;
   color: #444444;
   font-style: normal;
@@ -125,6 +125,13 @@ td {
 .main-servise {
   background-color: #F0F0F0;
 
+}
+
+.delivery-image {
+  background: url("../images/delivery-2.svg");
+  background-size: 136px 164px;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .service-title {
@@ -211,9 +218,9 @@ td {
   font-size: 18px;
   line-height: 30px;
 }
-footer{
+.main-footer {
   color: #FFFFFF;
-  background-color: #444444;
+  background-color:#444444;
 }
 
 .footer-service-link {
