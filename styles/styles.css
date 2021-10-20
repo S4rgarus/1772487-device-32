@@ -31,7 +31,27 @@
   font-display: swap;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  width:1140px;
+  margin: 0 auto;
   font-family: "Raleway";
   font-size: 16px;
   line-height: 24px;
@@ -39,9 +59,41 @@ body {
   background-color: #FFFFFF;
 }
 
+
+.navigation {
+  display: flex;
+  width: 1160px;
+}
+
+.navigation-user{
+  width: 1075px;
+  list-style-type: none;
+}
+
+.navigation-catalog {
+  width: 1041px;
+  list-style-type: none;
+}
+
+.main-slider {
+  width: 1161px;
+  display: flex;
+}
+
+.main-category {
+  display: flex;
+  justify-content: space-between;
+  margin:0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .main-header {
   color:#000000;
+  width: 1160px;
+  margin: 17px 140px 0px 140px;
   background-color: #FFE17F;
+  display: flex;
 }
 
 .main-button{
@@ -76,6 +128,13 @@ body {
   font-size: 16px;
   line-height: 18px;
   text-decoration:none;
+}
+
+.main-slider{
+  display: flex;
+  width: 1161px;
+  margin: 190px 139px 0px 140px;
+
 }
 
 .slider-number {
@@ -121,8 +180,13 @@ body {
   font-size: 16px;
   line-height: 30px;
 }
-
+.category-item{
+  width: 160px;
+}
 .main-servise {
+  display:flex;
+  width: 1440px;
+  flex-direction: column;
   background-color: #F0F0F0;
 
 }
@@ -152,6 +216,23 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.about {
+  display: flex;
+  flex-direction: row;
+  width: 1440px;
+  margin: 0;
+  padding: 0;
+}
+
+.about-container{
+  width: 560px;
+}
+
+.contacts-container {
+  width: 560px;
+}
+
 
 .about-title, .contacts-title {
   font-family: Raleway;
