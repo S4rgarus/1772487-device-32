@@ -8,11 +8,9 @@
     <body>
         <header class="main-header">
             <img class="logo" src="images/device.svg" alt="логотип интернет магазина Девайс" width="145" height="36">
-
-
-
+        <div class="navigation-container">
             <nav class="navigation">
-
+              <div class="navigation-user">
                 <form class="navigation-search">
                   <p><input type="text" name="search" placeholder="Поиск по сайту">
                   <input class="visually-hidden" type="submit" value="Найти"></p>
@@ -29,7 +27,7 @@
                         <a class="navigation-link" href="#">Корзина</a>
                      </li>
                 </ul>
-
+              </div>
 
                 <ul class="navigation-list navigation-catalog">
                     <li><a class="navigation-link" href="#">Каталог товаров</a> </li>
@@ -51,6 +49,7 @@
                             </li>
                             <li class="navigation-item">
                             <a class="navigation-link-menu" href="#">Квадрокоптеры</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="navigation-item">
@@ -64,9 +63,10 @@
                     </li>
                 </ul>
             </nav>
+          </div>
         </header>
 
-        <main class="main-page">
+        <main class="main-container main-page">
             <h1 class="visually-hidden">Интернет магазин "Девайс"</h1>
 
             <section class="main-slider">
@@ -112,12 +112,12 @@
                         </button>
                       </li>
                     </ol>
-                  </section>
             </section>
+
 
             <section class="main-category">
                 <h2 class="visually-hidden">Категории товаров</h2>
-                <ul>
+                <ul class="category-container">
                     <li><a class="category-item" href="#">
                 <img src="images/category-1.svg" alt="Очки виртуальной реальности">
                 <p class="visually-hidden">Виртуальная реальность</p></a>
@@ -146,6 +146,7 @@
             </section>
             <section class="main-servise">
                 <h2 class="visually-hidden">Наш сервис</h2>
+                <div class="service-container">
                 <ul class="main-service-list">
                     <li class="main-service-item">
                       <a class="main-button" href="#section1">Доставка</a>
@@ -178,21 +179,23 @@
                       Выгодные для банка, разумеется.</p>
                     <img class="service-img" src="images/credit-1.svg" alt="человек с кредитной картой">
                   </section>
+                  </div>
             </section>
 
             <section class="delivery">
               <h2 class="visually-hidden">Доставка</h2>
-              <img class="delivery" src="images/delivery.svg" alt="грузовичек">
-              <a href="#">Доставим редкий товар под заказ</a>
-              <div>
-                <button class="dilivery-info-button" type="button">
-                <span class="visually-hidden">Кнопка информации</span>>
+              <div class="delivery-container">
+                  <img class="delivery" src="images/delivery.svg" alt="грузовичек">
+                  <a href="#">Доставим редкий товар под заказ</a>
+                <div>
+                  <button class="dilivery-info-button" type="button">i</button>
+                  <span class="visually-hidden">Кнопка информации</span>>
+                </div>
               </div>
 
             </section>
-
+            <div class="about-container">
             <section class="about">
-              <div>
                 <h2 class="about-title">О нас</h2>
                 <p class="slider-disc">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
                 <p class="slider-disc">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
@@ -202,7 +205,6 @@
                         <li class="about-item">ТоксБери</li>
                         </ul>
                 <a class="main-button" href="#">Подробнее о нас</a>
-              </div>
             </section>
             <section class="contacts">
                 <h2 class="contacts-title">Контакты</h2>
@@ -222,9 +224,8 @@
                 </ul>
 
                 <a class="main-button" href="#">Напишите нам</a>
-
-
             </section>
+          </div>
 
             <section class="newsletter-main">
                 <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
@@ -245,7 +246,7 @@
         </main>
 
         <footer class="main-footer">
-
+          <div class="footer-container">
             <p><a href="index.html"><img class="logo" src="images/logo-footer.svg" alt="логотип интернет магазина Девайс"></a></p>
 
             <p class="footer-contact-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -291,7 +292,7 @@
               </section>
 
               <p><a href="https://htmlacademy.ru/" target="_blank"><img class="academy-logo" src="images/htmlacademyfooter.svg" alt="логотип htmlacademy"></a></p>
-
+          </div>
         </footer>
     </body>
 </html>
