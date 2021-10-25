@@ -8,7 +8,7 @@
     <body>
         <header class="main-header">
             <img class="logo" src="images/device.svg" alt="логотип интернет магазина Девайс" width="145" height="36">
-        <div class="navigation-container">
+
             <nav class="navigation">
               <div class="navigation-user">
                 <form class="navigation-search">
@@ -63,15 +63,15 @@
                     </li>
                 </ul>
             </nav>
-          </div>
         </header>
 
         <main class="main-container main-page">
+          <div class="main-page-container">
             <h1 class="visually-hidden">Интернет магазин "Девайс"</h1>
 
             <section class="main-slider">
                 <h2 class="visually-hidden">Лучшее предложение</h2>
-                <div>
+                <div class="main-slider-container">
                     <p class="slider-number">01</p> <!--Временно в черном цвете -->
                     <img class="slider-image" src="images/slider/slider-1.png" width="560" height="560" alt="фото лучших предложений">
                     <p class="slider-header">Порхает как бабочка, жалит как пчела!</p>
@@ -93,7 +93,7 @@
                     <button class="slider-button slider-next" type="button">
                       <span class="visually-hidden">Следующее фото</span>
                     </button>
-                </div>
+
 
                     <ol class="slider-pagination">
                       <li class="slider-pagination-item">
@@ -112,6 +112,7 @@
                         </button>
                       </li>
                     </ol>
+                  </div>
             </section>
 
 
@@ -224,32 +225,36 @@
                 </ul>
 
                 <a class="main-button" href="#">Напишите нам</a>
-            </section>
-          </div>
+              </section>
+            </div>
 
             <section class="newsletter-main">
-                <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-                <p class="newsletter-text">Еженедельный дайджест с обзорами новинок,
+              <div class="newsletter-container">
+                <h2 class="newsletter-title newsletter-title-container">Подпишитесь на рассылку</h2>
+                <p class="newsletter-text newsletter-text-container">Еженедельный дайджест с обзорами новинок,
                     длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-                    <form action="https://echo.htmlacademy.ru/courses" method="post">
-                 <p><label class="visually-hidden" for="emailnews">
+                    <form class="newsletter-form-container" action="https://echo.htmlacademy.ru/courses" method="post">
+                 <p><label class="" for="emailnews">                                <!--visually-hidden тут-->
                     Ваш e-mail <input class="field" placeholder="Ваш e-mail" type="email" name="email" id="emailnews" required>
                  </label>
                  <input type="submit" value="Подписаться">
                  </p>
                     </form>
                 <p class="newsletter-text">Это бесплатно</p>
+                </div>
 
             </section>
 
-
+        </div>
         </main>
 
         <footer class="main-footer">
           <div class="footer-container">
+            <section class="footer-contacts-right">
             <p><a href="index.html"><img class="logo" src="images/logo-footer.svg" alt="логотип интернет магазина Девайс"></a></p>
 
             <p class="footer-contact-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            </section>
 
             <section class="footer-service">
               <h2 class="visually-hidden">Сервис</h2>
@@ -265,10 +270,6 @@
                 </li>
             </ul>
             </section>
-
-
-            <a class="footer-contact-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-
 
             <section class="footer-social">
               <h2 class="visually-hidden">Социальные сети</h2>
@@ -291,7 +292,11 @@
                 </ul>
               </section>
 
-              <p><a href="https://htmlacademy.ru/" target="_blank"><img class="academy-logo" src="images/htmlacademyfooter.svg" alt="логотип htmlacademy"></a></p>
+
+              <section class="footer-contacts-left">
+                <a class="footer-contact-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+                <p><a href="https://htmlacademy.ru/" target="_blank"><img class="academy-logo" src="images/htmlacademyfooter.svg" alt="логотип htmlacademy"></a></p>
+              </section>
           </div>
         </footer>
     </body>
