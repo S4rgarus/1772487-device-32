@@ -48,10 +48,8 @@ html {
 }
 
 body {
-  display: flex;
   margin: 0 auto;
   flex-direction: column;
-  width:1440px;
   min-height: 100%;
   font-family: "Raleway";
   font-size: 16px;
@@ -91,6 +89,8 @@ body {
 .main-header {
   color:#000000;
   background-color: #FFE17F;
+  width:1440px;
+  margin: 0 auto;
 
 }
 
@@ -128,9 +128,6 @@ body {
   text-decoration:none;
 }
 
-.main-container {
-  flex-grow: 1;
-}
 
 .main-page-container {
   width: 1440px;
@@ -458,5 +455,20 @@ body {
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.catalog-monopods{
+  display: flex;
+}
+
+.catalog-filter{
+  margin-right: 72px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.product-card {
+  display: flex;
 
 }
