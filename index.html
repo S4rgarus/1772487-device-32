@@ -7,60 +7,60 @@
     </head>
     <body>
         <header class="main-header">
-          <div class="main-logo">
+
             <img class="logo" src="images/device.svg" alt="логотип интернет магазина Девайс" width="145" height="36">
-          </div>
+
             <nav class="navigation">
-              <div class="navigation-user">
+              <div class="navigation-container">
                 <form class="navigation-search">
                   <p><input type="text" name="search" placeholder="Поиск по сайту">
                   <input class="visually-hidden" type="submit" value="Найти"></p>
                 </form>
 
-                <ul class="navigation-list navigation-user">
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="#">Войти</a>
+                <ul class="user-menu">
+                    <li class="user-menu-item">
+                        <a class="user-menu-link" href="#">Войти</a>
                      </li>
-                     <li class="navigation-item">
-                        <a class="navigation-link" href="#">Сравнить</a>
+                     <li class="user-menu-item">
+                        <a class="user-menu-link" href="#">Сравнить</a>
                      </li>
-                     <li class="navigation-item">
-                        <a class="navigation-link" href="#">Корзина</a>
+                     <li class="user-menu-item">
+                        <a class="user-menu-link" href="#">Корзина</a>
                      </li>
                 </ul>
               </div>
 
-                <ul class="navigation-list navigation-catalog">
-                    <li><a class="navigation-link" href="#">Каталог товаров</a> </li>
-                        <ul>
-                            <li class="navigation-item">
-                            <a class="navigation-link-menu" href="#">Виртуальная реальность</a>
+                <ul class="catalog-menu">
+                    <li><a class="catalog-menu-link" href="#">Каталог товаров</a> </li>
+                        <ul class="submenu">
+                            <li class="submenu-item">
+                            <a class="submenu-link" href="#">Виртуальная реальность</a>
                             </li>
-                             <li class="navigation-item">
-                            <a class="navigation-link-menu" href="#">Моноподы для селфи</a>
+                             <li class="submenu-item">
+                            <a class="submenu-link" href="#">Моноподы для селфи</a>
                             </li>
-                            <li class="navigation-item">
-                            <a class="navigation-link-menu" href="#">Экшн-камеры</a>
+                            <li class="submenu-item">
+                            <a class="submenu-link" href="#">Экшн-камеры</a>
                             </li>
-                            <li class="navigation-item">
-                            <a class="navigation-link-menu" href="#">Фитнес-браслеты</a>
+                            <li class="submenu-item">
+                            <a class="submenu-link" href="#">Фитнес-браслеты</a>
                             </li>
-                            <li class="navigation-item">
-                            <a class="navigation-link-menu" href="#">Умные часы</a>
+                            <li class="submenu-item">
+                            <a class="submenu-link" href="#">Умные часы</a>
                             </li>
-                            <li class="navigation-item">
-                            <a class="navigation-link-menu" href="#">Квадрокоптеры</a>
+                            <li class="submenu-item">
+                            <a class="submenu-link" href="#">Квадрокоптеры</a>
                             </li>
                         </ul>
                     </li>
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="delivery.html">Доставка</a>
+                    <li class="catalog-menu-item">
+                        <a class="catalog-menu-link" href="delivery.html">Доставка</a>
                     </li>
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="guarantee.html">Гарантия</a>
+                    <li class="catalog-menu-item">
+                        <a class="catalog-menu-link" href="guarantee.html">Гарантия</a>
                     </li>
-                    <li class="navigation-item">
-                        <a class="navigation-link" href="contacts.html">Контакты</a>
+                    <li class="catalog-menu-item">
+                        <a class="catalog-menu-link" href="contacts.html">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -73,7 +73,18 @@
             <section class="main-slider">
                 <h2 class="visually-hidden">Лучшее предложение</h2>
                 <div class="main-slider-container">
+
+                  <div class="slider-image-container">
                     <img class="slider-image" src="images/slider/slider-1.png" width="560" height="560" alt="фото лучших предложений">
+
+                    <button class="slider-button slider-prev" type="button">
+                      <span class="visually-hidden">Предыдущее фото</span>
+                    </button>
+                    <button class="slider-button slider-next" type="button">
+                      <span class="visually-hidden">Следующее фото</span>
+                    </button>
+                  </div>
+
                     <div class="slider-disc-container">
                     <p class="slider-number">01</p> <!--Временно в черном цвете -->
                     <p class="slider-header">Порхает как бабочка, жалит как пчела!</p>
@@ -89,13 +100,6 @@
                         <td>Радиус поражения</td>
                       </tr>
                     </table>
-                    <button class="slider-button slider-prev" type="button">
-                      <span class="visually-hidden">Предыдущее фото</span>
-                    </button>
-                    <button class="slider-button slider-next" type="button">
-                      <span class="visually-hidden">Следующее фото</span>
-                    </button>
-
 
                     <ol class="slider-pagination">
                       <li class="slider-pagination-item">
@@ -234,20 +238,20 @@
 
             <section class="newsletter-main">
               <div class="newsletter-container">
-                <h2 class="newsletter-title newsletter-title-container">Подпишитесь на рассылку</h2>
-                <p class="newsletter-text newsletter-text-container">Еженедельный дайджест с обзорами новинок,
+                <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+                <p class="newsletter-discription">Еженедельный дайджест с обзорами новинок,
                     длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-              </div>
-              <div class="nesletter-subscription">
-                    <form class="newsletter-form-container" action="https://echo.htmlacademy.ru/courses" method="post">
-                 <p><label class="" for="emailnews">                                <!--visually-hidden тут-->
+                  <div class="newsletter-form">
+                    <form  action="https://echo.htmlacademy.ru/courses" method="post">
+                    <p><label class="" for="emailnews">                                <!--visually-hidden тут-->
                     Ваш e-mail <input class="field" placeholder="Ваш e-mail" type="email" name="email" id="emailnews" required>
-                 </label>
-                 <input type="submit" value="Подписаться">
-                 </p>
+                    </label>
+                    <input type="submit" value="Подписаться">
+                    </p>
                     </form>
+                  </div>
                 <p class="newsletter-text">Это бесплатно</p>
-                </div>
+              </div>
             </section>
 
         </div>
@@ -255,16 +259,15 @@
 
         <footer class="main-footer">
           <div class="footer-container">
-            <section class="footer-contacts-right">
-            <p><a href="index.html"><img class="logo" src="images/logo-footer.svg" alt="логотип интернет магазина Девайс"></a></p>
 
-            <p class="footer-contact-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            </section>
+            <p><a href="index.html"><img class="logo-footer" src="images/logo-footer.svg" alt="логотип интернет магазина Девайс"></a></p>
 
-          <div class="footer-center">
-            <section class="footer-service">
-              <h2 class="visually-hidden">Сервис</h2>
-            <ul class="footer-service-list">
+            <addres class="footer-addres">
+              <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            </addres>
+
+
+            <ul class="footer-service">
                 <li class="footer-service-item">
                   <a class="footer-service-link" href="#">Доставка</a>
                 </li>
@@ -275,34 +278,31 @@
                     <a class="footer-service-link" href="#">Кредит</a>
                 </li>
             </ul>
-            </section>
+
 
             <section class="footer-social">
               <h2 class="visually-hidden">Социальные сети</h2>
                 <ul class="footer-social-list">
                   <li class="footer-social-item">
                     <a class="button" href="#">
-                      <span class="visually-hidden">Facebook</span>
+                      <span class="">Facebook</span>
                     </a>
                   </li>
                   <li class="footer-social-item">
                     <a class="button" href="#">
-                      <span class="visually-hidden">Instagram</span>
+                      <span class="">Instagram</span>
                     </a>
                   </li>
                   <li class="footer-social-item">
                     <a class="button" href="#">
-                      <span class="visually-hidden">Twitter</span>
+                      <span class="">Twitter</span>
                     </a>
                   </li>
                 </ul>
               </section>
-            </div>
 
-              <section class="footer-contacts-left">
-                <a class="footer-contact-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-                <p><a href="https://htmlacademy.ru/" target="_blank"><img class="academy-logo" src="images/htmlacademyfooter.svg" alt="логотип htmlacademy"></a></p>
-              </section>
+                <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+                <a class="academy-logo" href="https://htmlacademy.ru/" target="_blank"><img src="images/htmlacademyfooter.svg" alt="логотип htmlacademy"></a>
           </div>
         </footer>
     </body>
