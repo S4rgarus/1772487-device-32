@@ -30,14 +30,40 @@
                   <a class="user-menu-link user-menu-cart" href="#">Корзина</a>
                </li>
           </ul>
+          <div class="popup-cart popup-cart-disp">
+            <h2 class="visually-hidden">Товары в корзине</h2>
+            <ul class="popup-cart-list">
+              <li class="popup-cart-item">
+                <a class="popup-cart-link" href="#">
+                  <img class="popup-cart-img" src="images/cart/selfiepoor.jpg"  width="41" height="43" alt="Любительская селфи-палка">
+                  <p class="popup-cart-title">Любительская селфипалка</p>
+                </a>
+                <button class="delete-item-button"></button>
+              </li>
+              <li class="popup-cart-item">
+                <a class="popup-cart-link" href="#">
+                  <img class="popup-cart-img" src="images/cart/selfiepro.jpg"  width="41" height="43" alt="Профессиональная селфи-палка">
+                  <p class="popup-cart-title">Профессиональная селфи-палка</p>
+                </a>
+                <button class="delete-item-button"></button>
+              </li>
+            </ul>
+            <div class="popup-cart-sum">
+              <p class="popup-cart-value">Товаров: 2</p>
+              <p class="popup-cart-price">Сумма: 2000Р</p>
+            </div>
+             <a class="popup-cart-open" href="#"> Открыть карзину</a>
+          </div>
         </div>
 
-          <ul class="catalog-menu">
+        <!-- попап корзины-->
+
+          <ul class="catalog-menu inner-catalog">
               <li class="catalog-menu-item">
               <a class="catalog-menu-link" href="catalog.html">Каталог товаров</a>
               <button class="submenu-button" type="button"></button>
               </li>
-                  <ul class="submenu visually-hidden">
+                  <ul class="submenu submenu-display">
                       <li class="submenu-item">
                       <a class="submenu-link" href="#">Виртуальная реальность</a>
                       </li>
@@ -57,7 +83,6 @@
                       <a class="submenu-link" href="#">Квадрокоптеры</a>
                       </li>
                   </ul>
-              </li>
               <li class="catalog-menu-item">
                   <a class="catalog-menu-link" href="#">Доставка</a>
               </li>
@@ -94,20 +119,27 @@
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Стоимость</legend>
-                    <button class="range-toggle toggle-min" type="button">
+                    <div class="range-slider">
+                      <div class="range-buttons">
+                        <div class="range-line" style="left: -1px; width: 119px">
+                     <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">минимальная цена</span>
                       </button>
                       <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">максимальная цена</span>
                       </button>
-
-                    <label class="catalog-filter-label">
-                      от<input class="catalog-filter-input" type="number" name="min-price">
-                    </label>
-
-                    <label class="catalog-filter-label">
-                        до <input class="catalog-filter-input" type="number" name="max-price">
+                      </div>
+                    </div>
+                    <div class="range-inputs">
+                      <label class="catalog-filter-label catalog-filter-label-min">
+                       от<input class="catalog-filter-input" type="number" value="0" name="min-price">
                       </label>
+
+                      <label class="catalog-filter-label catalog-filter-label-max">
+                        до <input class="catalog-filter-input" type="number" value="5000" name="max-price">
+                      </label>
+                    </div>
+
                   </fieldset>
 
                   <fieldset class="catalog-filter-group">
@@ -185,8 +217,10 @@
                 <option value="cheap">Сначала дешёвое</option>
                 <option value="expensive">Сначала дорогое</option>
                 </select>
+
                   <button class="submit-sorting submit-sorting-up" type="submit"></button>
                   <button class="submit-sorting submit-sorting-down" type="submit"></button>
+
                 </form>
               </div>
 

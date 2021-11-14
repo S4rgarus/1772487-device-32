@@ -35,7 +35,7 @@
                     <a class="catalog-menu-link" href="catalog.html">Каталог товаров</a>
                     <button class="submenu-button" type="button"></button>
                     </li>
-                        <ul class="submenu visually-hidden">
+                        <ul class="submenu submenu-display">
                             <li class="submenu-item">
                             <a class="submenu-link" href="#">Виртуальная реальность</a>
                             </li>
@@ -55,7 +55,6 @@
                             <a class="submenu-link" href="#">Квадрокоптеры</a>
                             </li>
                         </ul>
-                    </li>
                     <li class="catalog-menu-item">
                         <a class="catalog-menu-link" href="#">Доставка</a>
                     </li>
@@ -326,5 +325,70 @@
                   </svg></a>
           </div>
         </footer>
+
+        <!-- модальное окно-->
+
+          <div class="modal-container modal-close">
+
+            <div class="modal modal-delivery">
+
+              <div class="modal-delivery-wrap">
+                <h2 class="modal-delivery-title">Доставка под заказ</h2>
+                <button class="modal-delivery-button">
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+              </div>
+
+              <form class="modal-delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+
+              <div class="field-group modal-delivery-form-name">
+                <label class="form-label" for="form-name">Ваше имя:</label>
+                <input class="field" type="text" id="form-name" name="form-name" placeholder="Имя Фамилия" required>
+                <p class="form-comment">Пожалуйста, представьтесь</p>
+              </div>
+
+              <div class="field-group modal-delivery-form-email">
+                <label class="form-label" for="form-email">Ваш e-mail:</label>
+                <input class="field" type="email" id="form-email" name="form-email" placeholder="krasotka92@mail.ru" value="krasotka92@mail.ru" required>
+                <p class="form-comment">Забавный у вас адрес</p>
+              </div>
+
+              <div class="field-group modal-delivery-form-order">
+                <label class="form-label" for="form-order">Что нужно привезти:</label>
+                <input class="field" type="text" id="form-order" name="form-order" placeholder="В свободной форме">
+              </div>
+
+              <div class="field-group modal-delivery-form-quantity">
+
+                <label class="form-label" for="form-quantity">Количество:</label>
+
+                <div class="quantity-input">
+                  <button class="quantity-input-button quantity-input-button-minus">
+                    <span class="visually-hidden">Уменьшить количество</span>
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 7H0v2h16V7Z" fill="#000" opacity=".3"/></svg>
+                  </button>
+                  <input class="field field-quantity" type="number" min="1" step="1" id="form-quantity" name="form-quantity" value="1">
+                  <button class="quantity-input-button quantity-input-button-plus">
+                    <span class="visually-hidden">Увеличить количество</span>
+                    <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" fill="#000" opacity=".3"/>
+                    </svg>
+                  </button>
+                </div>
+
+                <button class="form-quantity-info">
+                  <span class="visually-hidden">Дополнительная информация</span>
+                </button>
+
+                <div class="form-quantity-info-text">
+                  <p>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p>
+                </div>
+
+              </div>
+                <button class="modal-form-submit main-button">Отправить</button>
+              </form>
+            </div>
+
+          </div>
     </body>
 </html>
