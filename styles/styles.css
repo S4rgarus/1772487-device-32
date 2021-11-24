@@ -48,7 +48,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -670,6 +670,8 @@ body {
 }
 
 .category-name {
+  word-wrap: break-word;
+  max-width: 160px;
   margin: 0;
   padding: 33px 0 69px;
   font-family: "Raleway", sans-serif;
@@ -830,6 +832,8 @@ body {
 }
 
 .service-button {
+  word-wrap: break-word;
+  max-width: 160px;
   padding-top: 9px;
   padding-bottom: 10px;
   min-width: 164px;
